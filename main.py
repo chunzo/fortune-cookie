@@ -39,11 +39,11 @@ class MainHandler(webapp2.RequestHandler):
         number_sentence = ('Your lucky number: ' + lucky_number)
         number_paragraph =  ('<p>' + number_sentence + '</p>')
 
-        cookie_again_button = '<a href=\'.\'><button>Another cookie \
-                please</button></a>'
+        cookie_again_button = ('<a href=\'.\'><button>Another cookie\
+                               please</button></a>')
 
-        content = header + number_paragraph + fortune_paragraph + \
-                cookie_again_button
+        content = (header + number_paragraph + fortune_paragraph +
+                   cookie_again_button)
 
         self.response.write(content)
 
